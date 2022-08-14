@@ -81,24 +81,97 @@
 
 # #Fourth Challenge
 # #Pizza Order
-print("welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want ? S, M, or L ? ")
-add_Pepperoni = input("Do you want pepperoni? Y or N ? ")
-extra_cheese = input("Do you want extra cheese? Y or N ? ")
-bill = 0
-if size == "S" :
-    bill = 15
-    if add_Pepperoni =="Y" :
-             bill = bill + 2
-elif size == "M":
-    bill = 20
-    if add_Pepperoni =="Y" :
-             bill = bill + 3
-elif size == "L":
-    bill = 25
-    if add_Pepperoni =="Y" :
-             bill = bill + 3
+# print("welcome to Python Pizza Deliveries!")
+# size = input("What size pizza do you want ? S, M, or L ? ")
+# add_Pepperoni = input("Do you want pepperoni? Y or N ? ")
+# extra_cheese = input("Do you want extra cheese? Y or N ? ")
+# bill = 0
+# if size == "S" :
+#     bill = 15
+#     if add_Pepperoni =="Y" :
+#              bill = bill + 2
+# elif size == "M":
+#     bill = 20
+#     if add_Pepperoni =="Y" :
+#              bill = bill + 3
+# elif size == "L":
+#     bill = 25
+#     if add_Pepperoni =="Y" :
+#              bill = bill + 3
 
-if extra_cheese == "Y" :
-    bill = bill + 1
-print(f"Your final bill is : {bill}")
+# if extra_cheese == "Y" :
+#     bill = bill + 1
+# print(f"Your final bill is : {bill}")
+
+#Logical Operators
+
+# #Fifth Challenge
+# #Love Calculator
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n")
+# name2 = input("What is their name? \n")
+
+# name1_lower= name1.lower()
+# name2_lower= name2.lower()
+
+# t = name1_lower.count("t") + name2_lower.count("t")
+# r = name1_lower.count("r") + name2_lower.count("r")
+# u = name1_lower.count("u") + name2_lower.count("u")
+# e = name1_lower.count("e") + name2_lower.count("e")
+
+# first_digit =  t + r + u + e
+
+# l = name1_lower.count("l") + name2_lower.count("l")
+# o = name1_lower.count("o") + name2_lower.count("o")
+# v = name1_lower.count("v") + name2_lower.count("v")
+# e = name1_lower.count("e") + name2_lower.count("e")
+
+# second_digit =  l + o + v + e
+# total_str = str(first_digit)+str(second_digit)
+# total =int(total_str)
+# if total < 10 or total > 90:
+#     print(f"Your Score is {total} % ,You go together like coke and mentos.")
+# elif total > 40 and total < 50:
+#     print(f"Your Score is {total} % ,You are alright together .")
+# else:
+#     print(f"Your Score is {total} % ")
+
+# #Final Project
+# #Treasure Island
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/[TomekK]
+*******************************************************************************
+''') 
+print("Welcome to Treasue Island.")
+print("Your Mission to find the treasure")
+cross_road = input('You are at a cross road .Where do you wnat to go ? Type "left" or "right". \n' )
+if cross_road =="left":
+    lake = input("You come to a lake.There is an island in the middle of the lake.Type 'wait' to wait for a boat.Type 'swim' to swim across. \n")
+    if lake == "wait" :
+        colour=input("You arrive at the island unharmed.There is a house with 3 doors. One red , One yellow ,  and one blue. Which colour do you choose ? \n")
+        if colour == "yellow" :
+            print("You Win")
+        else:
+            print("Game Over")  
+    else:
+       print("Game Over")  
+else:
+    print("Game Over")   
