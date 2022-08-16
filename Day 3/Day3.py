@@ -77,8 +77,9 @@ if year % 4 == 0 :
 else:
     print(f"{year} is not leap year")
     
-#Multiple if statements 
+Multiple if statements 
 
+<<<<<<< HEAD
 
 #Fourth Challenge
 #Pizza Order
@@ -100,11 +101,33 @@ elif size == "L":
     if add_Pepperoni =="Y" :
              bill = bill + 3
 
+=======
+#Fourth Challenge
+#Pizza Order
+print("welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want ? S, M, or L ? ")
+add_Pepperoni = input("Do you want pepperoni? Y or N ? ")
+extra_cheese = input("Do you want extra cheese? Y or N ? ")
+bill = 0
+if size == "S" :
+    bill = 15
+    if add_Pepperoni =="Y" :
+             bill = bill + 2
+elif size == "M":
+    bill = 20
+    if add_Pepperoni =="Y" :
+             bill = bill + 3
+elif size == "L":
+    bill = 25
+    if add_Pepperoni =="Y" :
+             bill = bill + 3
+
+>>>>>>> ab42e3c0de1b4fa89a7dce59c7da51e423398d19
 if extra_cheese == "Y" :
     bill = bill + 1
 print(f"Your final bill is : {bill}")
 
-#Logical Operators
+Logical Operators
 
 #Fifth Challenge
 #Love Calculator
