@@ -3,6 +3,54 @@
 ## Exercise
 
 - https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json
+![image](https://user-images.githubusercontent.com/91926955/185407211-7487f2fb-10dd-4e72-9e95-ce6e66ca75d5.png)
+
+def turn_around():
+
+turn_left()
+
+turn_left()
+
+def turn_right():
+
+turn_around()
+
+turn_left()
+    
+def turn_jump():
+
+move()
+
+turn_left()
+
+move()
+
+turn_right()
+
+move()
+
+turn_right()
+
+move()
+
+turn_left()
+    
+turn_jump()
+
+turn_jump()
+
+turn_jump()
+
+turn_jump()
+
+turn_jump()
+
+turn_jump()
+
+
+    
+
+
 - https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%203&url=worlds%2Ftutorial_en%2Fhurdle3.json
 - https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%204&url=worlds%2Ftutorial_en%2Fhurdle4.json
 
@@ -16,3 +64,6 @@
 ![image](https://user-images.githubusercontent.com/91926955/185399135-0474bb1f-af1d-4a43-b9dd-dfcba828678b.png)
 ![image](https://user-images.githubusercontent.com/91926955/185399227-d436778d-a909-4b7e-8764-24507e440bca.png)
 In this code i am drawing letter I as a challenge.
+
+
+
