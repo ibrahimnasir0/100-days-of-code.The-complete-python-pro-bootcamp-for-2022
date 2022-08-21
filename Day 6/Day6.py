@@ -1,5 +1,7 @@
 #Function
+from lib2to3.pgen2.token import VBAR
 from platform import java_ver
+from termios import VMIN
 
 
 def my_function():
