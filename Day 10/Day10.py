@@ -56,18 +56,18 @@ operations ={"+" : add,
 
 
 def calulator():          
-        num1 = int(input("What's the first number? \n"))
+        num1 = float(input("What's the first number? \n"))
         for symbol in operations:
           print(symbol) 
         close = False
         while not close:  
               operation_symbol = input("Pick an operation from the above line: ")
-              num2 = int(input("What's the next number? \n"))
+              num2 = float(input("What's the next number? \n"))
               calculated_function = operations[operation_symbol]
               first_answer = calculated_function(num1 ,num2)
               print(f"{num1} {operation_symbol} {num2} = {first_answer}")
               
-              a = input(f"Type 'y' to continue calculating with {first_answer} ,or type 'n' to exit.")
+              a = input(f"Type 'y' to continue calculating with {first_answer} ,or type 'n' to start new.")
               if a =='y':
                     #  operation_symbol = input("Pick another operation : ")
                     #  num3 = int(input("What's the Third number? \n"))
